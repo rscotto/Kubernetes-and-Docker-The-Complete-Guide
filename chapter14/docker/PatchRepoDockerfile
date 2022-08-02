@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:22.04
 
 RUN apt-get update;apt-get -y install git curl apt-transport-https gnupg && \
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
